@@ -16,7 +16,13 @@
             {{ Form::text( "title" , Input::old( "title" ) , array( 'class'=>'form-control' , 'placeholder'=>'Post Title' ) ) }}
         </div>
     </div>
-
+    
+    <div class="form-group">
+        {{ Form::label( "price" , 'Price' , array( 'class'=>'col-lg-2 control-label' ) ) }}
+        <div class="col-lg-10">
+            {{ Form::text( "price" , Input::old( "price" ) , array( 'class'=>'form-control' , 'placeholder'=>'Price' ) ) }}
+        </div>
+    </div>
     
     <div class="form-group">
         {{ Form::label( "content" , 'Post Content' , array( 'class'=>'col-lg-2 control-label' ) ) }}

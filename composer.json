@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-		"davzie/laravel-bootstrap": "1.*"
+		"tannerholm/laravel-bootstrap": "1.*"
 
 	},
 	"autoload": {

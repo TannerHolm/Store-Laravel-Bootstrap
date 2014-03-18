@@ -37,7 +37,7 @@
                         <div class="thumbnail">
                             <a href="{{route('show', $post->id) }}"><img src="{{$post->img}}" alt=""></a>
                             <div class="caption">
-                                <h4 class="pull-right">{{$post->price}}
+                                <h4 class="pull-right">${{$post->price}}
                                 </h4>
                                 <h4 class=""><a href="{{route('show', $post->id) }}">{{ $post->title}}</a></h4>
                                 <p>

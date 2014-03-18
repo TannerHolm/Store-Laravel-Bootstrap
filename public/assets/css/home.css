@@ -16,9 +16,10 @@ body {
 }
 
 .caption {
-  height: 130px;
+  height: 150px;
   overflow: hidden;
 }
+
 
 .caption h4 {
   white-space: nowrap;
@@ -48,5 +49,6 @@ footer {
 }
 
 .content{
+  height: 300px;
   overflow-y: scroll;
 }
