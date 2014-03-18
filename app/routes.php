@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+
+Route::get('/',      	   array( 'as' => 'index',  'uses' => 'PostsController@index' ));
+Route::get('{items}',	   array( 'as' => 'show',   'uses' => 'PostsController@show' ));
+
+
