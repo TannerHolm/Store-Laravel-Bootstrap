@@ -35,13 +35,13 @@
     
 <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <a href="{{route('show', $post->id) }}"><img src="http://placehold.it/320x150" alt=""></a>
+                            <a href="{{route('show', $post->id) }}"><img src="{{$post->img}}" alt=""></a>
                             <div class="caption">
                                 <h4 class="pull-right">{{$post->price}}
                                 </h4>
                                 <h4 class=""><a href="{{route('show', $post->id) }}">{{ $post->title}}</a></h4>
                                 <p>
-                                    {{ Str::limit($post->content(), 30 )}}
+                                    {{ Str::limit($post->content(), 100 )}}
                                 </p>
                             </div>
                            

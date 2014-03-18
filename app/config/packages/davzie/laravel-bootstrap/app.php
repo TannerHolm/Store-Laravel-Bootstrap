@@ -8,7 +8,7 @@ return array(
     /**
      * The name of the application, will be used in the main management areas of the application
      */
-    'name' => 'Your Fantastic CMS',
+    'name' => 'Store Front',
 
     /**
      * The email address associated with support enquires on a technical basis

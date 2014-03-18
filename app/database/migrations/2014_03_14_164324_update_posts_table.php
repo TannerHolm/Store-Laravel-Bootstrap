@@ -28,7 +28,7 @@ class UpdatePostsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('items');
+		Schema::drop('posts');
 	}
 
 }
