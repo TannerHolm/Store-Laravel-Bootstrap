@@ -1,4 +1,7 @@
 <?php
+use Davzie\LaravelBootstrap\Uploads\Uploads;
+use Davzie\LaravelBootstrap\Posts\Posts;
+use Davzie\LaravelBootstrap\Uploads\UploadsRepository;
 
 class PostsController extends \BaseController {
 
@@ -8,7 +11,7 @@ class PostsController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index()	
 	{
 		$posts = Post::orderBy('created_at', 'DESC')->paginate(9);
 
@@ -24,6 +27,7 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
+		// $item = Uploads::find($uploadable_id);
 		$post = Post::findOrFail($id);
 
 		return View::make('posts.show', compact('post'));

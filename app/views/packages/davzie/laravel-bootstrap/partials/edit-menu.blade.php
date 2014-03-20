@@ -6,4 +6,7 @@
     @if( isset($taggable) and $taggable )
         <li><a href="#tagging" data-toggle="tab">Tags</a></li>
     @endif
+
+        <li><a href="#category" data-toggle="tab">Category</a></li>
+
 </ul>

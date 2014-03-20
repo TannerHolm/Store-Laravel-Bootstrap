@@ -10,6 +10,7 @@
                                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
+
                                 <div class="item active">
                                     <img class="slide-image" src="http://placehold.it/800x300" alt="">
                                 </div>
@@ -37,9 +38,9 @@
                         <div class="thumbnail">
                             <a href="{{route('show', $post->id) }}"><img src="{{$post->img}}" alt=""></a>
                             <div class="caption">
-                                <h4 class="pull-right">${{$post->price}}
+                                <h4 class="pull-right">${{ Str::limit($post->price(), 5 )}}
                                 </h4>
-                                <h4 class=""><a href="{{route('show', $post->id) }}">{{ $post->title}}</a></h4>
+                                <h4 class=""><a href="{{route('show', $post->id) }}">{{ Str::limit($post->title(), 20 )}}</a></h4>
                                 <p>
                                     {{ Str::limit($post->content(), 100 )}}
                                 </p>

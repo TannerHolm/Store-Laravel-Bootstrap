@@ -5,7 +5,7 @@
 
     @yield('heading')
 
-    {{ Form::open( array( 'url'=>$new_url , 'class'=>'form-horizontal form-top-margin' , 'role'=>'form' ) ) }}
+    {{ Form::open( array(  'url'=>$new_url , 'class'=>'form-horizontal form-top-margin' , 'role'=>'form' ) ) }}
 
         {{-- The error / success messaging partial --}}
         @include('laravel-bootstrap::partials.messaging')
